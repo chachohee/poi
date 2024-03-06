@@ -1,6 +1,5 @@
 package com.example.poi;
 
-import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -8,12 +7,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class toExcel3 {
+public class toExcel {
     public static void main(String[] args) throws IOException {
         // 새로운 엑셀 파일 생성
         XSSFWorkbook workbook = new XSSFWorkbook();
