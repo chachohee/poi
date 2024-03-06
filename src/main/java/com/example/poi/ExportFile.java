@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ExportFile {
     public static void exportFile(String totString) {
         try {
-            String directoryName = "/Users/babydoll/IdeaProjects/output/";
+            String directoryName = "/Users/babydoll/IdeaProjects/totxt/";
             String extension = ".txt";
 
             String[] querys = totString.split(";");

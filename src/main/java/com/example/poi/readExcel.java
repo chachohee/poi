@@ -12,7 +12,7 @@ import java.util.Objects;
 public class readExcel {
     public static void main(String[] args) {
         try {
-            FileInputStream file = new FileInputStream("/Users/babydoll/Downloads/poiTest (1).xlsx");
+            FileInputStream file = new FileInputStream("/Users/babydoll/Downloads/sample2.xlsx");
             IOUtils.setByteArrayMaxOverride(Integer.MAX_VALUE);
             XSSFWorkbook workbook = new XSSFWorkbook(file);
             XSSFSheet sheet = workbook.getSheetAt(0);
@@ -82,7 +82,7 @@ public class readExcel {
 
             String totString = conRowArr(rowArr);
 
-            CreateFileInProject.createFile(totString); // 프로젝트 안에 파일 생성
+//            CreateFileInProject.createFile(totString); // 프로젝트 안에 파일 생성
 
             ExportFile.exportFile(totString); // 원하는 경로에 파일 생성
 
